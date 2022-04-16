@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{font-size: 56px;}
+h2{font-size: 44px;}
+h3{font-size: 32px;}
+p{font-size: 20px;}
+ul{list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(30, 30, 30);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo{
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+li{
+    padding: 5px 0;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 2px 0;
+    transition: all 60ms ease;
+    border-bottom: 2px solid transparent;
+}
+
+header a:hover{
+    border-bottom: 2px solid;
+}
+
+
+#banner-1{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgb(0,0,0,0.5)), url(https://images.pexels.com/photos/7504803/pexels-photo-7504803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner-1 p{
+    padding: 0 20px;
+}
+
+
+.btn{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin: auto;
+    text-decoration: none;
+    background-color: rgb(144, 87, 201);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 600ms ease;
+}
+
+.btn:hover{
+    background-color: rgb(102, 51, 153);
+}
+
+#aprende .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    padding: 0 20px;
+    
+}
+
+#aprende .segundo-span{
+    color: rgb(102, 51, 153);
+}
+
+#aplica-hoy{
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
+#aplica-hoy .container{
+    padding: 40px 20px;
+}
+
+#aplica-hoy h2{
+    margin: 0;
+    text-transform: capitalize;
+    padding: 15px 0;
+}
+
+#aplica-hoy p{
+    display: none;
+}
+
+#aplica-hoy .card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 7px;
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+        ), url(https://blog.holbertonschool.com/wp-content/uploads/2021/06/Fichier-13.png);
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+        ), url(https://static01.nyt.com/images/2017/06/08/us/07HOLBERTONweb1/07HOLBERTONweb1-superJumbo.jpg);
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+        ), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFQo62e2P9PadKD2JZpdQ34VUNFCWVUU8WTQ&usqp=CAU);
+}
+
+#tweets .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+#tweets span{
+    color: rgb(102, 51, 153);
+}
+
+aside{
+    padding: 20px 20px;
+    background-color: rgb(108, 117, 125);
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(220, 27, 61);
+    font-size: 30px;
+}
+
+@media (min-width: 720px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        flex: auto;
+    }
+
+    article{
+        flex: 2;
+        overflow-y: auto;
+    }
+
+    aside{
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav{
+        flex-direction: row;
+        padding: 0;
+        padding-right: 30px;
+    }
+
+    li{
+        display: flex;
+        float: left;
+        margin-left: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #banner-1{
+        padding-top: 150px;
+    }
+
+    #banner-1 p{
+        max-width: 700px;
+    }
+
+    #aprende .container{
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: justify;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        
+    }
+
+    #aprende .container .titulo-1 h2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #aprende .container .titulo-1 .primer-span{
+        padding-left: 150px;
+    }
+
+    #aprende .container .titulo-1 .segundo-span{
+        padding-left: 200px;
+        color: rgb(102, 51, 153);
+    }
+
+    #aprende .container .titulo-1 .tercer-span{
+        padding-left: 250px;
+    }
+
+    #aprende .contenedor-imagen{
+        background-image: url(https://assets.website-files.com/61055a196b2e2f7d69b9f5b5/61055b6d87ba1a69741fe97f_Holberton_Tulsa_1527-801x522-9ca1e87.jpg);
+        background-size: cover;
+        background-position: center center;
+        width: 300px;
+        height: 300px;
+    }
+
+    #aprende .img-texto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+
+    #aprende .texto{
+        width: 50%;
+        text-align: center;
+        padding: 20px;
+        
+    }
+
+    #aplica-hoy .cartas{
+        display: flex;
+        margin-top: 40px;
+    }
+
+    #aplica-hoy p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #aplica-hoy .card{
+        padding: 20px;
+        margin: 10px;
+        background-size: 100% 130px;
+        background-position-y: 0;
+        background-color: rgb(108, 117, 125);
+        transition: all 500ms ease;
+    }
+
+    #aplica-hoy .card:hover{
+        box-shadow: 2PX 2PX 10PX rgba(255, 255, 255, 0.4);
+        transform: translateY(-4%);
+    }
+
+    #aplica-hoy .card h3{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #tweets .container{
+        margin-top: 40px;
+    }
+
+    #tweets .container span{
+        color: rgb(102, 51, 153);
+    }
+
+    #tweets .container p{
+        margin: 20px 0;
+    }
+
+    footer{
+        width: 100%;
+    }
+}

@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1{font-size: 56px;}
+h2{font-size: 44px;}
+h3{font-size: 32px;}
+p{font-size: 20px;}
+ul{list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(30, 30, 30);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo{
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+li{
+    padding: 5px 0;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 2px 0;
+    transition: all 60ms ease;
+    border-bottom: 2px solid transparent;
+}
+
+header a:hover{
+    border-bottom: 2px solid;
+}
+
+.titulo-tweets h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.titulo-tweets span{
+    color: rgb(102, 51, 153);
+}
+
+#ecuador, #colombia, #san-francisco .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#ecuador, #colombia, #san-francisco .parrafo{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.tweets{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#colombia{
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+aside{
+    padding: 20px 20px;
+    background-color: rgb(108, 117, 125);
+}
+
+footer a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(220, 27, 61);
+    font-size: 30px;
+}
+
+@media (min-width: 720px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        flex: auto;
+        padding-top: 70px;
+    }
+
+    article{
+        flex: 2;
+        overflow-y: auto;
+    }
+
+    aside{
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav{
+        flex-direction: row;
+        padding: 0;
+        padding-right: 30px;
+    }
+
+    li{
+        display: flex;
+        float: left;
+        margin-left: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .informacion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .parrafo{
+        flex: 2;
+        text-align: justify;
+    }
+
+    .tweets{
+        flex: 1;
+    }
+    
+    #ecuador, #colombia, #san-francisco span{
+        margin-top: 40px;
+    }
+
+    #colombia .informacion{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+}
